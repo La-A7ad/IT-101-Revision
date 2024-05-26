@@ -1,4 +1,4 @@
-Sure, here is the extended set of questions in the QnA format.
+I understand the issue with the code formatting in the answer section. To ensure the code is properly formatted in markdown, you should use triple backticks to enclose the code block and specify the language. Here is the corrected version with proper formatting:
 
 ### Unix and Shell Scripting QnA
 
@@ -6,6 +6,7 @@ Sure, here is the extended set of questions in the QnA format.
 - Write a Bash script that declares an indexed array with at least five elements and prints each element on a new line.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 declare -a my_array=("one" "two" "three" "four" "five")
@@ -19,6 +20,7 @@ done
 - Write a Bash script that takes a file name as an argument, checks if the file exists, and if it is readable, writable, and executable. Print appropriate messages.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 file=$1
@@ -37,6 +39,7 @@ fi
 - Write a Bash script to calculate the factorial of a number provided as an argument using a while loop.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 number=$1
@@ -53,6 +56,7 @@ echo "Factorial: $factorial"
 - Write a Bash script that defines a function to add two numbers passed as arguments and prints the result.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 add() {
@@ -67,6 +71,7 @@ add 3 5
 - Write a Bash script that declares two indexed arrays, merges them into a third array, and prints the elements of the merged array.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 array1=("one" "two" "three")
@@ -82,6 +87,7 @@ done
 - Write a Bash script that prompts the user to enter a number between 1 and 10. Use an if statement to check the input and print whether it is valid or not.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 read -p "Enter a number between 1 and 10: " num
@@ -97,6 +103,7 @@ fi
 - Write a Bash script that takes two arguments representing a range and prints all even numbers within that range using a for loop.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 start=$1
@@ -113,6 +120,7 @@ done
 - Write a Bash script that reads a file line by line and counts the total number of words in the file.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 file=$1
@@ -128,6 +136,7 @@ echo "Total words: $word_count"
 - Write a Bash script that asks the user to enter a day of the week and prints a specific message for each day using a case statement.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 read -p "Enter a day of the week: " day
@@ -144,6 +153,7 @@ esac
 - Write a Bash script that checks if a given string is a palindrome.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 read -p "Enter a string: " str
@@ -159,6 +169,7 @@ fi
 - Write a Bash script that uses an associative array to store student names as keys and their grades as values, then prints each student and their grade.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 declare -A student_grades
@@ -175,6 +186,7 @@ done
 - Write a Bash script that appends the current date and time to a log file every time it is run.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 log_file="log.txt"
@@ -186,6 +198,7 @@ echo "$(date)" >> $log_file
 - Write a Bash script that calculates the sum of numbers from 1 to a given number using an until loop.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 number=$1
@@ -203,6 +216,7 @@ echo "Sum: $sum"
 - Write a Bash script that takes a filename, a search string, and a replacement string as arguments and replaces all occurrences of the search string with the replacement string in the file using `sed`.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 file=$1
@@ -216,6 +230,7 @@ sed -i "s/$search/$replace/g" $file
 - Write a Bash script that checks if a given number is a prime number.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 number=$1
@@ -238,6 +253,7 @@ fi
 - Write a Bash script that calculates the first N Fibonacci numbers where N is provided as an argument.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 N=$1
@@ -257,6 +273,7 @@ done
 - Write a Bash script that takes a directory as an argument and creates a compressed backup of that directory.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 dir=$1
@@ -268,6 +285,7 @@ tar -czf backup_$(date +%F).tar.gz $dir
 - Write a Bash script that checks the disk usage of a given directory and sends an email alert if the usage exceeds a specified threshold.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 dir=$1
@@ -283,9 +301,12 @@ fi
 - Write a Bash script that generates a system report containing information about CPU, memory, disk usage, and network interfaces.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
-echo "CPU Info:"
+echo "
+
+CPU Info:"
 lscpu
 echo
 echo "Memory Info:"
@@ -294,9 +315,7 @@ echo
 echo "Disk Usage:"
 df -h
 echo
-echo "
-
-Network Interfaces:"
+echo "Network Interfaces:"
 ip a
 ```
 </details>
@@ -305,6 +324,7 @@ ip a
 - Write a Bash script that rotates logs for a given application. Keep the last 7 days of logs and delete older logs.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 log_dir=$1
@@ -316,6 +336,7 @@ find $log_dir -type f -name "*.log" -mtime +7 -exec rm {} \;
 - Write a Bash script that checks the system uptime and sends an alert if the system has been up for more than a specified number of days.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 threshold_days=$1
@@ -330,6 +351,7 @@ fi
 - Write a Bash script that monitors user logins and sends an email alert when a specific user logs in.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 user=$1
@@ -343,6 +365,7 @@ fi
 - Write a Bash script that presents a menu to the user with options to display date, list files, show free memory, and exit. Implement the menu using a while loop and case statement.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 while true; do
@@ -366,6 +389,7 @@ done
 - Write a Bash script that compresses files older than 30 days in a given directory into a tar.gz archive.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 dir=$1
@@ -377,6 +401,7 @@ find $dir -type f -mtime +30 -print0 | tar -czvf archive_$(date +%F).tar.gz --nu
 - Write a Bash script that generates a report of files larger than a specified size in a given directory.
 <details>
 <summary>Answer</summary>
+
 ```bash
 #!/bin/bash
 dir=$1
