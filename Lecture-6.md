@@ -1,3 +1,6 @@
+Sure, here is the corrected version of the QnA with proper formatting for the code blocks.
+
+### Unix and Shell Scripting QnA
 
 #### Introduction
 
@@ -12,11 +15,11 @@ Version control helps manage multiple versions of a document, keeping track of c
 **Q2:** **What are the key challenges addressed by a version control system?**  
 <details>
 <summary>Answer</summary>
-1. Collaboration
-2. Version management
-3. Data backup
-4. Restoring previous versions
-5. Change tracking
+1. Collaboration  
+2. Version management  
+3. Data backup  
+4. Restoring previous versions  
+5. Change tracking  
 </details>
 
 **Q3:** **Define Version Control System (VCS).**  
@@ -30,8 +33,8 @@ VCS, also known as source control or revision control, is a system that tracks t
 **Q4:** **What are the differences between centralized and distributed version control systems?**  
 <details>
 <summary>Answer</summary>
-- **Centralized VCS**: Stores files in a central repository; users work with the same repository; single point of failure.
-- **Distributed VCS**: Clients fully mirror the repository; offline operations allowed; network connection needed only for publishing changes.
+- **Centralized VCS**: Stores files in a central repository; users work with the same repository; single point of failure.  
+- **Distributed VCS**: Clients fully mirror the repository; offline operations allowed; network connection needed only for publishing changes.  
 </details>
 
 **Q5:** **What is a lock-based version control system?**  
@@ -51,12 +54,12 @@ An optimistic VCS allows users to work in private workspaces and submit changes 
 **Q7:** **List some benefits of using a version control system.**  
 <details>
 <summary>Answer</summary>
-1. Streamline merging and branching
-2. Examine and experiment with code
-3. Track changes
-4. Access modification history
-5. Automated backups
-6. Regulatory compliance
+1. Streamline merging and branching  
+2. Examine and experiment with code  
+3. Track changes  
+4. Access modification history  
+5. Automated backups  
+6. Regulatory compliance  
 </details>
 
 #### Git and GitHub
@@ -64,8 +67,8 @@ An optimistic VCS allows users to work in private workspaces and submit changes 
 **Q8:** **What is the difference between Git and GitHub?**  
 <details>
 <summary>Answer</summary>
-- **Git**: An open-source VCS created in 2005 for Linux development, tracking file changes.
-- **GitHub**: A company providing tools that integrate with Git, enhancing collaboration and code sharing.
+- **Git**: An open-source VCS created in 2005 for Linux development, tracking file changes.  
+- **GitHub**: A company providing tools that integrate with Git, enhancing collaboration and code sharing.  
 </details>
 
 **Q9:** **Do you need GitHub to use Git?**  
@@ -101,33 +104,42 @@ A branch is a parallel copy of the source code, allowing developers to work on f
 **Q13:** **Describe the three states of files in Git.**  
 <details>
 <summary>Answer</summary>
-1. **Modified**: Changes made but not staged.
-2. **Staged**: Changes marked for inclusion in the next commit.
-3. **Committed**: Changes stored in the Git database.
+1. **Modified**: Changes made but not staged.  
+2. **Staged**: Changes marked for inclusion in the next commit.  
+3. **Committed**: Changes stored in the Git database.  
 </details>
 
 #### Installing Git and Configuring the Environment
 
 **Q14:** **How do you install Git on a computer?**  
 <details>
-<summary>
+<summary>Answer</summary>
+Use the command:
 
-Answer</summary>
-Use the command `sudo apt-get install git`.
+```bash
+sudo apt-get install git
+```
 </details>
 
 **Q15:** **How do you verify the installation of Git?**  
 <details>
 <summary>Answer</summary>
-Use the command `git --version`.
+Use the command:
+
+```bash
+git --version
+```
 </details>
 
 **Q16:** **How do you configure your Git username and email?**  
 <details>
 <summary>Answer</summary>
 Use the commands:
-- `git config --global user.name "Your Full Name"`
-- `git config --global user.email you@somewhere.com`
+
+```bash
+git config --global user.name "Your Full Name"
+git config --global user.email you@somewhere.com
+```
 </details>
 
 #### Creating a Project
@@ -135,11 +147,11 @@ Use the commands:
 **Q17:** **What are the steps to create a new Git project?**  
 <details>
 <summary>Answer</summary>
-1. Create a directory: `mkdir tmp`
-2. Navigate into the directory: `cd tmp`
-3. Create a project directory: `mkdir test1`
-4. Navigate into the project directory: `cd test1`
-5. Initialize the Git repository: `git init`
+1. Create a directory: `mkdir tmp`  
+2. Navigate into the directory: `cd tmp`  
+3. Create a project directory: `mkdir test1`  
+4. Navigate into the project directory: `cd test1`  
+5. Initialize the Git repository: `git init`  
 </details>
 
 #### Stage and Commit Example
@@ -147,19 +159,33 @@ Use the commands:
 **Q18:** **How do you stage a file in Git?**  
 <details>
 <summary>Answer</summary>
-Use the command `git add <filename>`.
+Use the command:
+
+```bash
+git add <filename>
+```
 </details>
 
 **Q19:** **How do you stage all existing files in Git?**  
 <details>
 <summary>Answer</summary>
-Use the command `git add -A`.
+Use the command:
+
+```bash
+git add -A
+```
 </details>
 
 **Q20:** **How do you commit changes in Git?**  
 <details>
 <summary>Answer</summary>
-Use the command `git commit -m "message"`.
+Use the command:
+
+```bash
+git commit -m "message"
+```
 </details>
 
 This comprehensive QnA question bank covers all the relevant content from Lecture 6 on Unix and Shell Scripting, including detailed analysis and examples from the images provided in the lecture slides. If you need any more questions or further details on specific topics, let me know!
+
+This should now have proper formatting and display the code correctly. Let me know if you need any further adjustments!
