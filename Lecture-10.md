@@ -1,3 +1,6 @@
+Sure, here is the corrected version of the QnA with proper formatting for the code blocks.
+
+### Unix and Shell Scripting QnA
 
 **Q1:** **When is a case statement used in Bash?**  
 <details>
@@ -70,12 +73,14 @@ A for loop allows for the specification of a list of values and executes a list 
 **Q12:** **What is the syntax of a for loop in Bash?**  
 <details>
 <summary>Answer</summary>
+
 ```bash
 for { variable name } in { list }
 do
   commands
 done
 ```
+
 </details>
 
 **Q13:** **What does a while loop do in Bash?**  
@@ -93,12 +98,14 @@ A while loop is used when the number of iterations is unknown.
 **Q15:** **What is the syntax of a while loop in Bash?**  
 <details>
 <summary>Answer</summary>
+
 ```bash
 while [ condition ]
 do
   commands
 done
 ```
+
 </details>
 
 **Q16:** **What is the purpose of the until loop in Bash?**  
@@ -110,12 +117,14 @@ An until loop executes until the test command succeeds. As long as this command 
 **Q17:** **What is the syntax of an until loop in Bash?**  
 <details>
 <summary>Answer</summary>
+
 ```bash
 until [TEST-COMMAND];
 do
   COMMANDS
 done
 ```
+
 </details>
 
 #### Functions
@@ -129,26 +138,30 @@ A function is a method used in shell scripts to group reusable code blocks.
 **Q19:** **What are the benefits of using functions in Bash scripting?**  
 <details>
 <summary>Answer</summary>
-1. Functions are read directly into the shell's memory and stored for later use, making execution faster.
+1. Functions are read directly into the shell's memory and stored for later use, making execution faster.  
 2. Functions help organize long shell scripts into modular and reusable code blocks.
 </details>
 
 **Q20:** **What is the syntax for defining a function in Bash?**  
 <details>
 <summary>Answer</summary>
+
 ```bash
 function <function name> () {
   commands
 }
 ```
+
 </details>
 
 **Q21:** **How can a function be defined in a single line in Bash?**  
 <details>
 <summary>Answer</summary>
+
 ```bash
 function <function name> () { commands; }
 ```
+
 </details>
 
 **Q22:** **What must be included at the end of commands when defining a function in a single line?**  
@@ -197,3 +210,4 @@ Add the parameters after the function call separated by spaces.
 Use positional command-line arguments (`$1`, `$2`, etc.) to access them within the function.
 </details>
 
+This should now have proper formatting and display the code correctly. Let me know if you need any further adjustments!
