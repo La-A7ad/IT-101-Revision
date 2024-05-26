@@ -1,4 +1,4 @@
-Sure, here is the QnA question bank with highlighted questions and answers hidden using spoilers.
+Sure, here is the corrected version of the QnA with proper formatting for the code blocks and additional questions to make the concepts more concrete.
 
 ### Unix and Shell Scripting QnA
 
@@ -7,19 +7,28 @@ Sure, here is the QnA question bank with highlighted questions and answers hidde
 **Q1:** **How do you create a new user account in Linux?**  
 <details>
 <summary>Answer</summary>
-`sudo useradd -d homedir -g groupname -m -s shell -u userid accountname`
+
+```bash
+sudo useradd -d homedir -g groupname -m -s shell -u userid accountname
+```
 </details>
 
 **Q2:** **How do you modify an existing user account in Linux?**  
 <details>
 <summary>Answer</summary>
-`sudo usermod -d /home/newdir -m -l oldname newname`
+
+```bash
+sudo usermod -d /home/newdir -m -l oldname newname
+```
 </details>
 
 **Q3:** **How do you delete a user account in Linux?**  
 <details>
 <summary>Answer</summary>
-`sudo userdel -r username`
+
+```bash
+sudo userdel -r username
+```
 </details>
 
 #### File Globbing
@@ -101,7 +110,10 @@ The `cut` command is used to select columns from files based on a delimiter or a
 **Q16:** **How do you use the `cut` command to select fields based on a delimiter?**  
 <details>
 <summary>Answer</summary>
-`cut -d ':' -f1,3 file.txt` uses the colon as a delimiter and selects fields 1 and 3.
+
+```bash
+cut -d ':' -f1,3 file.txt
+```
 </details>
 
 **Q17:** **What does `cut -c 5- file.txt` do?**  
@@ -143,7 +155,70 @@ It removes duplicate lines from a sorted list.
 **Q23:** **How do you use `sed` to replace text in a file?**  
 <details>
 <summary>Answer</summary>
-`sed 's/old-string/new-string/' filename.txt` replaces `old-string` with `new-string` in `filename.txt`.
+
+```bash
+sed 's/old-string/new-string/' filename.txt
+```
 </details>
 
-This comprehensive QnA question bank should help you thoroughly review and prepare for your exam on Unix and Shell Scripting. If you need any more questions or further details on specific topics, let me know!
+**Q24:** **What does the `awk` command do?**  
+<details>
+<summary>Answer</summary>
+`awk` is a powerful programming language used for text processing and pattern matching.
+</details>
+
+**Q25:** **How do you use `awk` to print the second column of a file?**  
+<details>
+<summary>Answer</summary>
+
+```bash
+awk '{print $2}' file.txt
+```
+</details>
+
+**Q26:** **What does the `tr` command do?**  
+<details>
+<summary>Answer</summary>
+The `tr` command translates or deletes characters from stdin and writes the result to stdout.
+</details>
+
+**Q27:** **How do you use `tr` to convert all lowercase letters to uppercase?**  
+<details>
+<summary>Answer</summary>
+
+```bash
+echo "text" | tr '[:lower:]' '[:upper:]'
+```
+</details>
+
+**Q28:** **What does the `find` command do?**  
+<details>
+<summary>Answer</summary>
+The `find` command searches for files and directories in a directory hierarchy based on a given expression.
+</details>
+
+**Q29:** **How do you use the `find` command to search for files named `example.txt`?**  
+<details>
+<summary>Answer</summary>
+
+```bash
+find /path -name example.txt
+```
+</details>
+
+**Q30:** **What does the `xargs` command do?**  
+<details>
+<summary>Answer</summary>
+The `xargs` command builds and executes command lines from stdin, allowing the output of one command to be used as arguments for another command.
+</details>
+
+**Q31:** **How do you use `find` and `xargs` to delete all `.txt` files in a directory?**  
+<details>
+<summary>Answer</summary>
+
+```bash
+find /path -name "*.txt" | xargs rm
+```
+</details>
+
+This expanded QnA question bank covers more details about user and group management, file globbing, pipes and filters, and various commands used in Unix and Linux, providing a thorough understanding of the concepts. If you need any more questions or further details, let me know!
