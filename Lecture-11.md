@@ -264,4 +264,3 @@ declare -A ARRAY_NAME
 Accessing associative arrays is similar to accessing indexed arrays for listing indices, values, counting elements, or iterating through the array. The only difference is that in associative arrays, the index is a string.
 </details>
 
-This comprehensive QnA question bank covers all the relevant content from Lecture 11 on Unix and Shell Scripting, including detailed analysis and examples from the images provided in the lecture slides. If you need any more questions or further details on specific topics, let me know!
